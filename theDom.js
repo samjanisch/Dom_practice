@@ -29,3 +29,11 @@ const btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
     alert("Hello World");
 })
+
+function alertFunction() {
+    alert("You did it!");
+}
+
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+});
